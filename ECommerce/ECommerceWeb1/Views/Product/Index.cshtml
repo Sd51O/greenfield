@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<main>
+    <h2>Product Details</h2>
+    <div class="row">
+        @{
+            foreach (Catalogue.Product p in @Model)
+            {
+                <p>@p.Title    @p.Description    @p.PId        @p.UnitPrice</p>
+            }
+        }
+    </div>
+</main>
